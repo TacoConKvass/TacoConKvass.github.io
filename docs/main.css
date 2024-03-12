@@ -6,3 +6,13 @@ body {
 
     color: #DCFFFF;
 }
+
+div.panel {
+    background-color: #100510;
+    border: 2px solid #000510;
+}
+
+div.panel-inside {
+    background-color: #000010;
+    border: 2px solid #000510;
+}
