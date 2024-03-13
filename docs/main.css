@@ -1,18 +1,36 @@
 body {
-    background-color: #000010;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	background-color: #000010;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-    color: #DCFFFF;
+	color: #DCFFFF;
 }
 
-div.panel {
-    background-color: #100510;
-    border: 2px solid #000510;
+.bg-circle {
+  height: 15vw;
+  width: 15vw;
+  background-color: #16B219;
+  border-radius: 50%;
+  
+  z-index: -1;
+  position: absolute;
 }
 
-div.panel-inside {
-    background-color: #000010;
-    border: 2px solid #000510;
+div#welcome {
+	width: 80%;
+	padding-bottom: 7vw;
+	
+	position: relative;
+	top: 2.5vw;
+	left: 2vw;
 }
+
+/*
+Text        - #DCFFFF
+Background  - #000010
+Primary     - #16B219
+Secondary   - #DCFFFF
+Accent      - #3BC442
+*/
