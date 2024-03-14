@@ -8,6 +8,14 @@
 </head>
 
 <body>
+	<!--
+	<div class="navbar">
+		<div class="navbar-item">
+		<a href="/">Home</a>
+		</div>
+	</div>
+	//-->
+	
 	<span class="bg-circle" style="top: 1vw; left: 10vw;"></span>
 
 	<div id="welcome">
@@ -15,22 +23,24 @@
 	Hello, my name is Taco and I am a hobbyist programmer. <br>
 	</div>
 
-	<div>
-	<h2>My other projects include:</h2>
-	
-		<div>
-		<a href="https://github.com/TacoConKvass/CookingDelight">Cooking Delight</a><br>
-		- A Terraria mod adding cooking and food related mechanics. Written in C#.
+	<div id="projects">
+		<div class="header">
+		<h2>My other projects include:</h2>
 		</div>
 
-		<div>	
-		<a href="https://github.com/TacoConKvass/ecs-experiments">ECS experiments</a><br>
-		- Amateur attempts at writing an ECS framework. Written in <a href="https://github.com/vlang/v">V</a>
+		<div class="project" id="CookingDelight">
+		<a href="https://github.com/TacoConKvass/CookingDelight">Cooking Delight</a><br><br>
+		A Terraria mod adding cooking and food related mechanics. Written in C#.
 		</div>
 
-		<div>
-		<a href="https://github.com/TacoConKvass/ITClassProject">Another web page</a><br>
-		- A web page made for school IT classes. Written in C# using ASP.NET
+		<div class="project" id="ECS">
+		<a href="https://github.com/TacoConKvass/ecs-experiments">ECS experiments</a><br><br>
+		Amateur attempts at writing an ECS framework. Written in <a href="https://github.com/vlang/v">V</a>
+		</div>
+
+		<div class="project" id="ASP.Net">
+		<a href="https://github.com/TacoConKvass/ITClassProject">Another web page</a><br><br>
+		A web page made for school IT classes. Written in C# using ASP.NET
 		</div>
 
 	</div>
