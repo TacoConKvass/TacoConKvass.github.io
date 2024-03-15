@@ -2,20 +2,12 @@
 <head>
 	<meta charset='utf-8'>
 	<title>Home</title>
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta name='viewport' content='width=device-width, initial-scale=0.1'>
 	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 	<script src='main.js'></script>
 </head>
 
 <body>
-	<!--
-	<div class="navbar">
-		<div class="navbar-item">
-		<a href="/">Home</a>
-		</div>
-	</div>
-	//-->
-	
 	<span class="bg-circle" style="top: 1vw; left: 10vw;"></span>
 
 	<div id="welcome">
@@ -23,26 +15,26 @@
 	Hello, my name is Taco and I am a hobbyist programmer. <br>
 	</div>
 
+	<div class="header">
+	<h2>My other projects include:</h2>
+	</div>
+	
 	<div id="projects">
-		<div class="header">
-		<h2>My other projects include:</h2>
-		</div>
-
-		<div class="project" id="CookingDelight">
-		<a href="https://github.com/TacoConKvass/CookingDelight">Cooking Delight</a><br><br>
+		<div class="project clickable" onclick="external_link('github.com/TacoConKvass/CookingDelight')">
+		<!--  For consideration: using images for projects. Requires having images :tragedy:  -->
+		<h4>Cooking Delight</h4>
 		A Terraria mod adding cooking and food related mechanics. Written in C#.
 		</div>
-
-		<div class="project" id="ECS">
-		<a href="https://github.com/TacoConKvass/ecs-experiments">ECS experiments</a><br><br>
-		Amateur attempts at writing an ECS framework. Written in <a href="https://github.com/vlang/v">V</a>
+		
+		<div class="project clickable" onclick="external_link('github.com/TacoConKvass/ecs-experiments')">
+		<h4>ECS experiments</h4>
+		Amateur attempts at writing an ECS framework. Written in <a href="https://github.com/vlang/v">V</a>.
 		</div>
 
-		<div class="project" id="ASP.Net">
-		<a href="https://github.com/TacoConKvass/ITClassProject">Another web page</a><br><br>
-		A web page made for school IT classes. Written in C# using ASP.NET
+		<div class="project clickable" onclick="external_link('github.com/TacoConKvass/Pendulum-Sim')">
+		<h4>Pendulum simulations</h4>
+		Different attemts at creating a pendulum simulation. Written in: Python with the Turtle library; C++ with OpenGL.
 		</div>
-
 	</div>
 </body>
 </html>
