@@ -1,45 +1,93 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset='utf-8'>
-	<title>Home</title>
-	<meta name='viewport' content='width=1080, initial-scale=0.5'>
-	<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-	<script src='main.js'></script>
+	<meta charset="utf-8">
+	<title>Home - TacoConKvass</title>
+	<link rel="stylesheet" href="main.css">
 </head>
-
 <body>
-	<span class="bg-circle" style="top: 1vw; left: 10vw;"></span>
-
-	<div id="welcome">
 	<h1>Welcome!</h1>
-	Hello, my name is Taco and I am a hobbyist programmer. <br>
-	</div>
+	<main>
+		<!-- Intro -->
+		I am <font class="accented">Taco Con Kvass</font>, a game modder and a hobbyist programmer. <br>
+		<hr>
+		
+		<!-- Projects -->
+		<font class="accented">My projects:</font>
 
-	<div class="header">
-	<h2>My projects include:</h2>
-	</div>
-	
-	<div id="projects">
-		<div class="project clickable" onclick="external_link('github.com/TacoConKvass/CookingDelight')">
-		<!--  For consideration: using images for projects. Requires having images :tragedy:  -->
-		<h4>Cooking Delight</h4>
-		A Terraria mod adding cooking and food related mechanics. Written in C#.
+		<div class="projects">
+			<!-- Cooking Delight -->
+			<div class="project">
+				<img src="https://raw.githubusercontent.com/TacoConKvass/CookingDelight/main/icon_workshop.png" class="title-img" />
+				<h4>Cooking Delight</h4>
+				A Terraria mod adding cooking and food related mechanics.<br>
+				<img src="https://raw.githubusercontent.com/gilbarbara/logos/52addcaa18dfecb4df77f3ee0753dca6b98187ad/logos/c-sharp.svg" width="15px"/>
+				&ensp;|&ensp;
+				<a href="https://github.com/TacoConKvass/CookingDelight" class="accented">
+					<img src="https://i.gyazo.com/85e7ce9196ae635161fec921602903a7.png" width="15px"/>
+					Repository
+				</a>
+			</div>
+
+			<!-- ECS experiments -->
+			<div class="project">
+				<!-- <img src="" class="title-img"/> -->
+				<h4>ECS Experiments</h4>
+				Amateur attempts at writing an ECS framework. <br>
+				<img src="https://raw.githubusercontent.com/gilbarbara/logos/52addcaa18dfecb4df77f3ee0753dca6b98187ad/logos/vlang.svg" width="15px"/>
+				&ensp;|&ensp;
+				<a href="https://github.com/TacoConKvass/ecs-experiments" class="accented">
+					<img src="https://i.gyazo.com/85e7ce9196ae635161fec921602903a7.png" width="15px"/>
+					Repository
+				</a>
+			</div>
+
+			<!-- Pendulum Simulations -->
+			<div class="project">
+				<!-- <img src="" class="title-img"/> -->
+				<h4>Pendulum Simulations</h4>
+				Different attempts at creating a pendulum simulation. <br>
+				<img src="https://raw.githubusercontent.com/gilbarbara/logos/52addcaa18dfecb4df77f3ee0753dca6b98187ad/logos/python.svg" width="15px"/>
+				/
+				<img src="https://raw.githubusercontent.com/gilbarbara/logos/52addcaa18dfecb4df77f3ee0753dca6b98187ad/logos/c-plusplus.svg" width="15px"/>
+				&ensp;|&ensp;
+				<a href="https://github.com/TacoConKvass/pendulum-sim" class="accented">
+					<img src="https://i.gyazo.com/85e7ce9196ae635161fec921602903a7.png" width="15px"/>
+					Repository
+				</a>
+			</div>
+
+			<!-- RL2 ModLoader  -->
+			<div class="project">
+				<!-- <img src="" class="title-img"/> -->
+				<h4>Rogue Legacy 2 Mod Loader</h4>
+				A heavy work in progress mod loader for Rogue Legacy 2. <br>
+				<img src="https://raw.githubusercontent.com/gilbarbara/logos/52addcaa18dfecb4df77f3ee0753dca6b98187ad/logos/c-sharp.svg" width="15px"/>
+				&ensp;|&ensp;
+				<a href="https://github.com/TacoConKvass/rl2-modloader" class="accented">
+					<img src="https://i.gyazo.com/85e7ce9196ae635161fec921602903a7.png" width="15px"/>
+					Repository
+				</a>
+			</div>
 		</div>
 		
-		<div class="project clickable" onclick="external_link('github.com/TacoConKvass/ecs-experiments')">
-		<h4>ECS experiments</h4>
-		Amateur attempts at writing an ECS framework. Written in V.
-		</div>
-
-		<div class="project clickable" onclick="external_link('github.com/TacoConKvass/Pendulum-Sim')">
-		<h4>Pendulum simulations</h4>
-		Different attemts at creating a pendulum simulation. Written in: Python with the Turtle library; C++ with OpenGL.
-		</div>
-
-		<div class="project clickable" onclick="external_link('github.com/TacoConKvass/RL2-ModLoader')">
-		<h4>Rogue Legacy 2 Mod Loader</h4>
-		A heavy work in progress mod loader for Rogue Legacy 2. Written in C#. 
-		</div>
-	</div>
+		<!-- Socials and shit -->
+		<hr>
+		How to find me: <br>
+		<a href="https://www.youtube.com/channel/UChKqsjhVlw6D7Wn03FCcmHg" class="accented">
+			<img src="https://raw.githubusercontent.com/gilbarbara/logos/52addcaa18dfecb4df77f3ee0753dca6b98187ad/logos/youtube-icon.svg" width="15px"/>
+			Taco
+		</a>
+		&ensp;|&ensp;
+		<a href="https://www.github.com/TacoConKvass" class="accented">
+			<img src="https://i.gyazo.com/85e7ce9196ae635161fec921602903a7.png" width="15px"/>
+			TacoConKvass 
+		</a>
+		&ensp;|&ensp;
+		<a href="" class="accented">
+			<img src="https://raw.githubusercontent.com/gilbarbara/logos/52addcaa18dfecb4df77f3ee0753dca6b98187ad/logos/discord-icon.svg" width="15px"/>
+			taco_con_kvass
+		</a>
+	</main>
 </body>
 </html>

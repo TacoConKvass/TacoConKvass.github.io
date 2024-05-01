@@ -1,88 +1,82 @@
+/*
+Background color: #080904
+*/
+
+:root {
+	/* Colors */
+	--background: #080904;
+	--background-light: #081F0A;
+	--primary: #bcd16d;
+	--secondary: #6e8421;
+	--accent: #c2e150;
+}
+
+html {
+	background-image: linear-gradient(60deg, var(--background) 10%, var(--background-light));
+	background-repeat: no-repeat;
+	color: #f3f4ec;
+	text-align: center;
+	tab-size: 4;
+	line-height: 2;
+	min-height: 100%;
+	height: auto;
+}
+
 body {
-	background-color: #000020;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
-	color: #DCFFFF;
 }
 
-.bg-circle {
-  height: 15vw;
-  width: 15vw;
-  background-color: #16B219;
-  border-radius: 50%;
-  
-  z-index: -1;
-  position: absolute;
+main {
+	width: 100%;
 }
 
-div.navbar {
-	height: 100%;
-	background-color: #000025;
-	text-align: center;
-
-	position: fixed;
-	left: 0;
-	top: 0;
+.accented {
+	background: linear-gradient(to right, var(--accent), var(--secondary));
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
-div.navbar-item:hover {
-	background-color: #000030;
-}
-
-div#welcome {
+.projects {
 	width: 80%;
-	padding-bottom: 5vw;
-	
-	position: relative;
-	top: 2.5vw;
-	left: 2vw;
-}
-
-div#projects {
-	width: 75%;
 	display: grid;
 	grid-template-columns: 30% 30% 30%;
 	gap: 2vw;
-	margin: 3vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-div.header {
-	width: 75%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.project {
+	padding: .5vw;
+	min-height: 11vw;
+	background-color: var(--background-light);
+	border-radius: 0vw;
+	transition: border-radius .1s;
 }
 
-div.project {
-	height: auto;
-	margin: .3vw;
-	padding: 1vw;
-	padding-bottom: 2vw;
-	background-color: #000025;
-	text-align: center;
+.project:hover {
+	border-radius: 2vw;
 }
 
-div.project:hover {
-	transform: scale(1.025);
-	background-color: #000030;
-	box-shadow: .4vw .4vw #000038;
+.title-img {
+	object-fit: cover;
+	width: 98%;
+	height: 4vw;
+	transition: height .5s, width .5s;;
 }
 
-div.clickable {
-	cursor: pointer;
+.title-img:hover {
+	height: 15vw;
+	width: 15vw;
 }
 
-/*
-Text        	- #DCFFFF
-Background  	- #000020
-Primary     	- #16B219
-Secondary   	- #DCFFFF
-Accent      	- #3BC442
+a:link, a:visited, a:active {
+	background-color: transparent;
+	text-decoration: none;
+}
 
-Box color 		- #000025
-Box highlight	- #000030
-Box shadow 		- #000038
-*/
+hr {
+	width: 10vw;
+}
