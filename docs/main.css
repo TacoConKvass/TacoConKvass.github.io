@@ -36,6 +36,7 @@ main {
 .accented {
 	background: linear-gradient(to right, var(--accent), var(--secondary));
 	-webkit-background-clip: text;
+	background-clip: text;
 	color: transparent;
 }
 
@@ -62,14 +63,15 @@ main {
 
 .title-img {
 	object-fit: cover;
-	width: 98%;
+	width: 22vw;
 	height: 4vw;
-	transition: height .5s, width .5s;;
+	transition: height .75s, border-radius .1s;
+	border-radius: 0vw;
 }
 
 .title-img:hover {
-	height: 15vw;
-	width: 15vw;
+	height: 22vw;
+	border-radius: 1vw;
 }
 
 a:link, a:visited, a:active {
