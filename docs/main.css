@@ -5,9 +5,9 @@ Background color: #080904
 :root {
 	/* Colors */
 	--background: #080904;
-	--background-light: #081F0A;
+	--background-light: #08280A;
 	--primary: #bcd16d;
-	--secondary: #6e8421;
+	--secondary: #6eC421;
 	--accent: #c2e150;
 }
 
@@ -42,18 +42,23 @@ main {
 
 .projects {
 	width: 80%;
-	display: grid;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 	grid-template-columns: 30% 30% 30%;
 	gap: 2vw;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 .project {
-	padding: .5vw;
+	width: 23vw;
+	padding: .5vw;	
 	min-height: 11vw;
 	background-color: var(--background-light);
 	border-radius: 0vw;
+	align-content: center;
+	text-align: center;
 	transition: border-radius .1s;
 }
 
@@ -63,15 +68,24 @@ main {
 
 .title-img {
 	object-fit: cover;
-	width: 22vw;
-	height: 4vw;
-	transition: height .75s, border-radius .1s;
+	width: 15vw;
+	height: 2vw;
+	margin: 0vw;
+	margin-bottom: 1vw;
+	transition: height .75s, width .75s, border-radius .75s;
 	border-radius: 0vw;
 }
 
-.title-img:hover {
-	height: 22vw;
+.title-img:focus {
+	margin-top: 1vw;
+	width: 20vw;
+	height: 20vw;
 	border-radius: 1vw;
+	outline: 0;
+}
+
+h4 {
+	margin-top: 0;
 }
 
 a:link, a:visited, a:active {
