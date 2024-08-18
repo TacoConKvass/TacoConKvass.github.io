@@ -53,7 +53,7 @@ main {
 
 .project {
 	width: 23vw;
-	padding: .5vw;	
+	padding: 1vw;	
 	min-height: 11vw;
 	background-color: var(--background-light);
 	border-radius: 0vw;
