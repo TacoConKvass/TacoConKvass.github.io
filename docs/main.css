@@ -9,12 +9,13 @@ Background color: #080904
 	--primary: #bcd16d;
 	--secondary: #6eC421;
 	--accent: #c2e150;
-	--project-width: 300px;
 }
 
 html {
 	background-image: linear-gradient(60deg, var(--background) 10%, var(--background-light));
 	background-repeat: no-repeat;
+	font-family: "JetBrains Mono", monospace;
+	font-size: 14px;
 	color: #f3f4ec;
 	text-align: center;
 	tab-size: 4;
@@ -53,7 +54,7 @@ main {
 
 .project {
 	position: relative;
-	width: var(--project-width);
+	width: 300px;
 	padding: 20px;	
 	min-height: 100px;
 	background-color: var(--background-light);
@@ -63,14 +64,14 @@ main {
 }
 
 .project-links-pusher {
-	height: 30px;
+	height: 40px;
 }
 
 .project-links {
-	height: 30px;
+	height: 40px;
 	position: absolute;
-	bottom: 0;
-	width: var(--project-width)
+	bottom: 0px;
+	width: 300px;
 }
 
 .title-img {
