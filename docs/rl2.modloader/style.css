@@ -68,12 +68,22 @@
 	width: 550px;
 }
 
-@media screen and (width < 460px) {
-	.rl2-banner {
-		width: 300px;
+@media screen {
+	@media (width < 560px) {
+		.rl2-banner {
+			width: 350px;
+		}
+		.rl2-banner:focus {
+			width: 400px;
+		}
 	}
-	.rl2-banner:focus {
-		width: 320px;
+	@media (width < 460px) {
+		.rl2-banner {
+			width: 300px;
+		}
+		.rl2-banner:focus {
+			width: 320px;
+		}
 	}
 }
 
