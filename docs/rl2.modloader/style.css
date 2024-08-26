@@ -1,17 +1,20 @@
-nav {
-	width: 50%;
-}
 .navbar {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
-	height: 100px;
+	width: 50%;
+	height: 70px;
 
 	font-size: 30px;
 
 	text-align: center;
 	align-items: center;
 	justify-content: space-evenly;
+}
+
+@media screen and (width < 950px) {
+	.navbar {
+		width: 100%;
+	}
 }
 
 .navbar-element {
@@ -24,7 +27,23 @@ nav {
 	font-size: 12px;
 }
 
-.rl2-intro {
+@media screen {
+	@media (width < 450px) {
+		.navbar-element {
+			font-size: 10px;
+		}
+		.navbar {
+			font-size: 25px;
+		}
+	}
+	@media (width < 350px) {
+		.navbar-element {
+			font-size: 8px;
+		}
+	}
+}
+
+.element-layout {
 	width: 100%;
 
 	display: flex;
@@ -34,26 +53,92 @@ nav {
 	row-gap: 20px;
 
 	justify-content: center;
-	text-align: center;
 	align-items: center;
 
 	padding-bottom: 20px;
 }
 
 .rl2-banner {
-	width: 350px;
+	width: 400px;
 	transition: height .75s, width .75s;
 }
 
+
 .rl2-banner:focus {
-	width: 450px;
+	width: 550px;
 }
 
+@media screen and (width < 460px) {
+	.rl2-banner {
+		width: 300px;
+	}
+	.rl2-banner:focus {
+		width: 320px;
+	}
+}
+
+
 .enlargeable {
-	font-size: 14px;
-	transition: font-size .75s;
+	scale: 1;
+	padding: 10px;
+	transition: scale .75s, padding .75s;
 }
 
 .enlargeable:focus {
-	font-size: 18px;
+	scale: 1.3;
+	padding: 30px;
+}
+
+
+@media screen {
+	@media (width < 800px) {
+		.enlargeable:focus {
+			scale: 1.0;
+			padding: 10px;
+		}
+	}
+	@media (width < 716px) {
+		.enlargeable:focus {
+			scale: 1.2;
+		}
+	}
+}
+
+.rl2-ml-logo {
+	width: 300px;
+	transition: height .75s, width .75s;
+}
+
+.rl2-ml-logo:focus {
+	width: 350px;
+}
+
+@media screen and (width < 360px) {
+	.rl2-ml-logo:focus {
+		width: 320px;
+	}
+}
+
+.right-aligned {
+	text-align: right;
+}
+
+.left-aligned {
+	text-align: left;
+}
+
+@media screen and (width < 716px) {
+	.right-aligned {
+		text-align: left;
+	}
+}
+
+.width-320 {
+	width: 320px;
+}
+
+@media screen and (width < 400px) {
+	.width-320 {
+		width: 250px;
+	}
 }
