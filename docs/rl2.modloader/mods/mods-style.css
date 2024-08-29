@@ -1,3 +1,11 @@
+/*
+	--background: #080904;
+	--background-light: #08280A;
+	--primary: #bcd16d;
+	--secondary: #6eC421;
+	--accent: #c2e150;
+*/
+
 .navbar {
 	display: flex;
 	flex-direction: row;
@@ -41,4 +49,113 @@
 			font-size: 8px;
 		}
 	}
+}
+
+.mod-page {
+	display: flex;
+	flex-direction: row; 
+	gap: 40px;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 30px;
+}
+
+@media screen and (width < 700px) {
+	.mod-page {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.mod-icon {
+	width: 160px;
+	height: 160px;
+}
+
+@media screen {
+	@media (width < 1050px) {
+		.mod-icon {
+			width: 100px;
+			height: 100px;
+		}
+	}
+	@media (width < 850px) {
+		.mod-icon {
+			width: 80px;
+			height: 80px;
+		}
+	}
+	@media (width < 700px) {
+		.mod-icon {
+			width: 160px;
+			height: 160px;
+		}
+	}
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 240px;
+}
+
+@media screen and (width < 700px) {
+	.sidebar {
+		width: 300px;
+	}
+}
+
+.info-element {
+	padding: 20px 0px;
+	background-color: var(--background-light);
+	border-radius: 20px;
+	box-shadow: 5px 5px var(--background);
+}
+
+.description {
+	padding: 20px 20px;
+	width: 600px;
+	text-align: justify;
+}
+
+@media screen and (width < 700px) {
+	.description {
+		width: 300px;
+	}
+}
+
+.version-object { 
+	display: flex;
+	flex-direction: row;
+	width: 180px;
+	min-height: 40px;;
+	border-radius: 20px;
+	margin: 0px 10px;
+	padding: 0px 20px;
+	text-align: justify;
+	word-break: break-all;
+	align-content: center;
+	align-items: center;
+}
+
+.version-object:hover {
+	background-color: var(--background);
+	opacity: 0.7;
+}
+
+.version-object:before {
+	content: "";
+	background-image: url("https://www.svgrepo.com/show/140007/download-button.svg");
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	filter: invert(100%);
+}
+
+.white {
+	color: white;
 }
