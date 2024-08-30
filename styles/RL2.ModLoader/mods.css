@@ -144,18 +144,6 @@
 	opacity: 0.7;
 }
 
-.version-object::before {
-	content: "";
-	background-image: url("https://www.svgrepo.com/show/140007/download-button.svg");
-	background-size: 20px 20px;
-	background-repeat: no-repeat;
-	width: 40px;
-	height: 20px;
-	display: inline-block;
-	position: relative;
-	filter: invert(100%);
-}
-
 .white {
 	color: white;
 }
