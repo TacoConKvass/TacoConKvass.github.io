@@ -1,3 +1,17 @@
+.steam-link {  }
+
+.steam-link::before {
+	content: "";
+	background-image: url("https://w7.pngwing.com/pngs/579/605/png-transparent-steam-computer-icons-desktop-logo-steam-icon-monochrome-video-game-microsoft-store-thumbnail.png");
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	top: 4px;
+	display: inline-block;
+	position: relative;
+}
+
 .github-link {  }
 
 .github-link::before {
